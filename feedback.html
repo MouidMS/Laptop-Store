@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<!-- Start Head-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Laptop,Buy,Store" />
+    <meta name="author" content="FahadAndMouid" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="scripts/script.js"></script>
+
+    <title>FeedBack</title>
+</head>
+<!-- End Head-->
+
+<body>
+    <div id="container">
+        <!--Start Header -->
+        <div class="header">
+            <!--Name Website -->
+            <h1 class="Name"><span>L</span>aptop <span>S</span>tore </h1>
+            <!--Menu Header -->
+            <ul class="links">
+                <div class="pill-nav">
+                    <a class="link" href="index.html">Home</a>
+                    <a class="link" href="Devices.html">Devices</a>
+                    <a class="link" href="buy.html">Buy</a>
+                    <a class="active" href="feedback.html">Feedback</a>
+                    <!--We are now on this page-->
+                </div>
+            </ul>
+        </div>
+
+
+        <div class="item">
+            <!--Entering customer FeedBack-->
+            <h1> FeedBack Form </h1>
+            <!--Icon-->
+            <div id="icon"><img src="./images/feedback.png" /></div>
+
+            <!--customer information-->
+            <div id="InfoFeedback">
+                <form action="process" method="post" onsubmit="return validate();">
+                    <div class="infoUser"> <label> Name: <span class="error" id="errNameFB"> </span>
+                            <div> <input id="nameFB" type="text" name="name" placeholder="Enter your name..." size="20"
+                                    onkeyup="nodigit(this)" onfocus="focusFunction(this)" onblur="blurFunction(this)"
+                                    maxlength="" /> </div>
+                        </label> </div>
+                    <div class="infoUser"> <label> Phone: <span class="error" id="errPhone"> </span>
+                            <div> <input id="phoneFB" type="text" name="phone" onfocus="focusFunction(this)"
+                                    onblur="blurFunction(this)" placeholder="Enter your phone number..." /> </div>
+                        </label> </div>
+                    <div class="infoUser"> <label> Email Address: <span class="error" id="errEmail"> </span>
+                            <div> <input id="emailFB" type="text" name="email" onfocus="focusFunction(this)"
+                                    onblur="blurFunction(this)" placeholder="Enter your email address..." /> </div>
+                        </label> </div>
+                    <div class="infoUser"> <label> Subject : <span class="error" id="errSubject_in"> </span>
+                            <div> <input id="subject_in" type="text" name="subject_in" onfocus="focusFunction(this)"
+                                    onblur="blurFunction(this)" placeholder="Enter your subject..." /> </div>
+                        </label> </div>
+
+                    <!--Choosing the subject of the message by the customer-->
+                    <div class="infoUser"> <label> Select the subject of your massege: <span class="error"
+                                id="errSubject"> </span>
+                            <div class="infoUser">
+
+                                <select id="subject" name="subject">
+                                    <option> Choose Subject... </option>
+                                    <option> Latter to the editor </option>
+                                    <option> Grievances </option>
+                                    <option> Websit error </option>
+                                    <option> Other feedback/suggestion </option>
+                                </select>
+                            </div>
+                    </div>
+
+                    </label>
+                    <!--Writing a letter by the client-->
+                    <textarea id="message" name="message" rows="4" cols="50" onfocus="focusFunction(this)"
+                        onblur="blurFunction(this)"></textarea> <span class="error" id="errMessage"> </span>
+                    <!--Submit an attachment, if any-->
+                    <div><input type="file" name="chosenFile" /></div>
+                    <!--Erase all fields and restart it again-->
+                    <input class="submitBtn" type="reset" value="Reset Form" />
+                    <!--Executing-->
+                    <input class="submitBtn" type="submit" value="Submit Form" />
+                </form>
+            </div>
+</body>
+
+</html>

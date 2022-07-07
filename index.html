@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<!-- Start Head-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Laptop,Buy,Store" />
+    <meta name="author" content="FahadAndMouid" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Laptop Store </title>
+    <script src="scripts/script.js"></script>
+
+</head>
+<!-- End Head-->
+
+
+<!---Pages-->
+
+<body>
+    <div id="container">
+        <!--Start Header -->
+        <div class="header">
+            <!--Name Website -->
+            <div class="Login">
+                <form action="process" method="post" onsubmit="return validateLogin();">
+                    <span class="error" id="errName"> </span>
+                    <div class="name_login"> <label for="">User Name: <input type="text" id='name' name="Inputname"
+                                onfocus="focusFunction(this)" onblur="blurFunction(this)"
+                                placeholder="Enter your User..."> </label>
+                    </div>
+                    <span class="error" id="errPass"> </span>
+                    <div class="pass_login"> <label for="">Password: <input type="password" id='password'
+                                onfocus="focusFunction(this)" onblur="blurFunction(this)" name="Inputpass"
+                                placeholder="Enter your Password...">
+                        </label></div>
+
+                    <label class="Remember "> Remember Me <input type="checkbox" />
+                    </label>
+                    <input type="submit" value="Login" />
+                </form>
+            </div>
+            <h1 class="Name"><span>L</span>aptop <span>S</span>tore </h1>
+
+            <!--Menu Header -->
+            <ul class="links">
+                <div class="pill-nav">
+                    <a class="active" href="index.html">Home</a>
+                    <!--We are now on this page-->
+                    <a class="link" href="Devices.html">Devices</a>
+                    <a class="link" href="buy.html">Buy</a>
+                    <a class="link" href="feedback.html">Feedback</a>
+
+
+                </div>
+
+            </ul>
+            <!--Menu Header -->
+
+
+        </div>
+        <!--End Header -->
+
+
+
+
+        <!--Start Content -->
+        <div id="content">
+            <!--Start the description -->
+            <div class="item">
+                <!--description About -->
+                <div id='about'>
+                    <h1>About Laptop Store</h1>
+                    <img src="./images/about.webp" alt="" title="">
+                    <p>
+                        Laptop Store is a leading computer retailer committed to becoming the most loved
+                        We tirelessly pursue these goals by offering a superior
+                        shopping experience, rapid delivery and stellar customer service.
+                        We equip our customers with state-of-the-art decision-making resources such as detailed
+                        product
+                        information.
+                        We offer our customers peace of mind with fast delivery and cutting-edge logistics.
+                        At Laptop Store, we believe service truly begins after the product you ordered arrives at
+                        your
+                        doorstep.
+                        We follow through on this commitment with exceptional customer service.
+                        Our team of service associates are available via phone, e-mail and website to help ensure
+                        your
+                        utmost satisfaction.
+                    </p>
+                </div>
+
+            </div>
+            <div class="item">
+
+                <!--description Service -->
+                <div id="service">
+                    <h1>What We Do?</h1>
+                    <img src="./images/service.png" />
+                    <p>Warranty Service <br />
+                        Laptop store is a one stop shop for all your pc hardware servicing needs.
+                        We have dedicated team for servicing branded Laptops, Notebooks and Personal Computers.
+                        Laptop store is a wide network and has branches all Metro cities in India.
+                        In Chennai and Bangalore we do Acer and dell warranty service <br />
+
+                        Non warranty Service<br />
+                        A state of the art service centre, equipped with modern machinery.
+                        The company has its own In-house repair center to carry chip level repairs for its
+                        customer’s
+                        equipment's <br />
+
+                        Sales<br />
+                        Direct Sales & marketing of Desktop, Laptop, Servers, Printers & Peripherals<br />
+
+                        AMC<br />
+                        Comprehensive & Non-Comprehensive maintenance contracts, On-call field visits, Telephonic
+                        help &
+                        After Sales support
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+
+                <!--description Vision -->
+                <div class="item">
+                    <h1>Our Vision</h1>
+                    <p>By working with passion and focus on Quality and Efficiency to create competitive advantages
+                        for
+                        our customers,
+                        and while doing so always live up to our company values
+                    </p>
+                </div>
+                <!--description Mission -->
+                <div class="item">
+                    <h1>Our Mission</h1>
+                    <p>Our Mission is to achieve consistent identity in the deliverance of highly qualified services
+                        and adding values to the clients through pro-activity,
+                        transparency in communication and on time deliverance of products through excellent
+                        performance.
+                    </p>
+                </div>
+                <!--description values -->
+                <div class="item">
+                    <div id="values">
+                        <h1>Our Values</h1>
+                        <p>Excellence : We deliver what is promised and dealing well with any problems and queries
+                            that
+                            arise.<br />
+                            Drive : Advanced Technology Focus <br />
+                            Quality : No Compromise in quality of the service <br />
+                            Integrity : We build trust by acting with integrity in everything we do, from ensuring
+                            services
+                            to driving quality and efficiency.
+                        </p>
+                    </div>
+                </div>
+                <!--End the description -->
+
+            </div>
+        </div>
+        <!--End Content -->
+
+        <!--Jump to on the page-->
+        <button class="Jump"><a href="#container">Jump to Home</a></button>
+    </div>
+</body>
+
+</html>

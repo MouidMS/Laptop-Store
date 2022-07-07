@@ -1,0 +1,198 @@
+/*for all pages*/
+body {
+    font-family: Arial, Helvetica, Futura ;
+    margin: 0;
+    padding: 0;
+  }
+  p{
+      font-size: 20px;
+  }
+  .container {
+    margin: 0 auto;
+  }
+
+  span{
+color: #05fff8e6;
+  }
+
+/* for Header */
+.header{
+    padding: 12px;
+    background: #247099;
+    color: white;
+}
+.header span{
+    color: #05fff8e6;
+      }
+/*Navigation Bar*/
+.pill-nav a:hover {
+    background: #0cdefa;
+    color: #fff;
+    text-decoration: underline;
+}
+.pill-nav a{
+    margin-left: 20px;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.Login{
+float: right;
+text-align: right;
+margin-top: 15px;
+}
+.name_login .pass_login{
+    padding: 10px;
+}
+.Remember {
+    margin-right: 50px;
+}
+
+
+
+span.error{
+    color: red;
+    font-weight: bold;
+}
+
+
+/*active page*/
+.active{
+    background-color: #1bc2d8;
+}
+
+/*for Content And description*/
+.item{
+    border-style: dotted;
+    padding: 30px;
+    margin: 35px;
+}
+.item  :hover{
+color: #000;
+}
+.item h1{
+    font-size: 36px;
+    color: #0187ce;
+    font-family: fantasy,Arial, Helvetica ;
+}
+.item p,h1{
+margin-left: 30px;
+}
+
+
+#service img{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#about img{
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+    margin-bottom: 38px;
+}
+#values {
+    width: 290px;
+}
+
+/* Using Jump to on the page*/
+  .Jump{
+  background-color: #0187ce;
+  margin-left: 45%;
+  margin-bottom: 120px;
+  margin-top: 40px;
+  }
+.Jump a, a:visited{
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+/*For Page 2 : Devices */
+.laptop h1{
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+.col{
+display: inline-flex;
+}   
+
+table ,tr,td{
+    border-style:solid;
+    vertical-align: top;
+    text-align: center;
+}
+.laptop img{
+    width: 60%;
+    margin: 5%;
+}
+.laptop table{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.laptop{
+    text-align: center;
+    border-style: solid;
+    border-radius: 12px;
+    margin: 16px;
+    padding: 2%;
+    width: 30%;
+}
+.device{
+    display:inline-flex;
+}
+/*For Page 3 And 4 : Buy,Feedback */
+
+/*Edit input*/
+input:hover {
+    background-color: pink; 
+    color: red;
+}
+ input:focus {
+     background-color: lightblue; 
+     color: blue;
+}
+.input label{
+        font-weight: bolder;
+}
+
+    /*Edit Icon*/
+#icon img{
+    width: 18%;
+    float: right;
+    margin-right: 20%;
+}
+
+/*Edit submit*/
+.submitBtn a, a:visited{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.submitBtn{
+ margin: 20px;       
+ background-color: #0187ce;
+padding: 20px 20px;
+color: white;
+}
+
+/*Page Format*/
+#InfoBuy{
+    margin-left: 40px;
+    font-size: 20px;
+}
+#InfoFeedback{
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 30px; 
+}
+.infoUser{
+    margin: 20px;
+}

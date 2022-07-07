@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<!-- Start Head-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Laptop,Buy,Store" />
+    <meta name="author" content="FahadAndMouid" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Buy</title>
+</head>
+<!-- End Head-->
+
+<body>
+    <div id="container">
+        <!--Start Header -->
+        <div class="header">
+            <!--Name Website -->
+            <h1 class="Name"><span>L</span>aptop <span>S</span>tore </h1>
+            <!--Menu Header -->
+            <ul class="links">
+                <div class="pill-nav">
+                    <a class="link" href="index.html">Home</a>
+                    <a class="link" href="Devices.html">Devices</a>
+                    <a class="active" href="buy.html">Buy</a>
+                    <!--We are now on this page-->
+                    <a class="link" href="feedback.html">Feedback</a>
+                </div>
+            </ul>
+            <!--Menu Header -->
+        </div>
+        <!--End Header -->
+
+
+        <div class="item">
+            <!--Start Purchase information -->
+            <div id="order">
+                <div class="input">
+                    <h1> Order Details </h1>
+
+                    <!--Icon-->
+                    <div id="icon"><img src="./images/new-order-icon.jpg" /></div>
+
+                    <!--customer information-->
+                    <div id='InfoBuy'>
+                        <form action="" method="get">
+                            <div> <label> Name: <div> <input type="text" name="name" placeholder="Enter your name..." />
+                                    </div></label></div>
+                            <div> <label>Phone Number: <div> <input type="text" name="phone"
+                                            placeholder="Enter your phone number..." /> </div> </label></div>
+                            <label> Email: <div> <input type="email" name="email" placeholder="Enter your email..." />
+                                </div> </label>
+                            <label> Address: <div> <input type="text" name="address"
+                                        placeholder="Enter your address..." /></div> </label>
+                            <br />
+
+                            <!--Choosing a laptop by the customer-->
+                            <label>Choose a Laptop:</label>
+                            <div>
+                                <select name="SelectLaptop" id="Laptop">
+                                    <option value="dell">DELL</option>
+                                    <option value="hp">HP</option>
+                                    <option value="macBook">MacBook</option>
+                                    <option value="lenovo">Lenovo</option>
+                                </select>
+                            </div>
+
+                            <br />
+                            <!--How to ship the order to the customer-->
+                            <div>
+                                <div>
+                                    <label> Collect From Store <input type="radio" name="delivery" value="store"
+                                            checked="checked" />
+                                    </label> <br />
+                                    <label> Home Delivery <input type="radio" name="delivery" value="home" /> </label>
+                                </div>
+                            </div>
+
+                            <!--Enter the credit card number to make the purchase-->
+                            <div>
+                                <h1> payment information </h1>
+                                <div>
+                                    <div> <label> CREDIT CARD NO.:<div> <input type="text" name="card" /> </div></label></div>
+                                    <div> <label> EXP:<div> <input type="text" name="exp" /> </div> </label> </div>
+                                    <div> <label> CCV:<div> <input type="text" name="ccv" /> </div> </label> </div>
+                                    <!--Executing the purchase-->
+                                    <input class="submitBtn" type="submit" value="Register" />
+                                    <!--Erase all fields and restart it again-->
+                                    <input class="submitBtn" type="reset" value="Reset">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
